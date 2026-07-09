@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anusha Antony — Aspiring Software Engineer</title>
+<meta name="description" content="Anusha Antony · Full-Stack Developer · AI Enthusiast · Portfolio" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient color field -->
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob-teal"></span>
+    <span class="blob blob-violet"></span>
+    <span class="blob blob-amber"></span>
+    <span class="blob blob-rose"></span>
+  </div>
+
+  <!-- ---------------- NAV ---------------- -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <button class="logo" data-scroll="about">Anusha<span class="grad-dot">.</span>Antony</button>
+
+      <nav class="nav-links" aria-label="Primary">
+        <button class="nav-link" data-scroll="about">/about</button>
+        <button class="nav-link" data-scroll="skills">/skills</button>
+        <button class="nav-link" data-scroll="projects">/projects</button>
+        <button class="nav-link" data-scroll="experience">/experience</button>
+        <button class="nav-link" data-scroll="achievements">/achievements</button>
+        <button class="nav-link" data-scroll="education">/education</button>
+        <button class="nav-link" data-scroll="contact">/contact</button>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Anusha-Antony/" target="_blank" rel="noreferrer" aria-label="GitHub" class="icon-link"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/anusha-antony244" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="icon-link"><i data-lucide="linkedin"></i></a>
+        <a href="#" id="resume-link-desktop" download="Anusha_Antony_Resume.pdf" class="btn btn-outline btn-sm"><i data-lucide="download"></i> resume</a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <i data-lucide="menu" id="menu-icon-open"></i>
+        <i data-lucide="x" id="menu-icon-close" style="display:none"></i>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="nav-link-mobile" data-scroll="about">/about</button>
+      <button class="nav-link-mobile" data-scroll="skills">/skills</button>
+      <button class="nav-link-mobile" data-scroll="projects">/projects</button>
+      <button class="nav-link-mobile" data-scroll="experience">/experience</button>
+      <button class="nav-link-mobile" data-scroll="achievements">/achievements</button>
+      <button class="nav-link-mobile" data-scroll="education">/education</button>
+      <button class="nav-link-mobile" data-scroll="contact">/contact</button>
+      <a href="#" id="resume-link-mobile" download="Anusha_Antony_Resume.pdf" class="btn btn-outline btn-sm mobile-resume"><i data-lucide="download"></i> download resume</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ---------------- HERO ---------------- -->
+    <section id="about" class="section hero container">
+      <div class="hero-copy">
+        <div class="pill">
+          <i data-lucide="rocket"></i>
+          <span>Aspiring Software Engineer</span>
+        </div>
+        <p class="eyebrow tone-blue">Hi, I'm</p>
+        <h1 class="hero-name">Anusha Antony</h1>
+        <p class="hero-subtitle">Full-Stack Developer · AI Enthusiast</p>
+        <p class="hero-tagline">Final-year B.Tech CS student who ships full-stack products end to end — from schema to UI — and bolts on AI where it earns its place.</p>
+
+        <div class="tag-row">
+          <span class="tag tone-teal">Hackathon Finalist</span>
+          <span class="tag tone-amber">Published Author, ICACA 2026</span>
+          <span class="tag tone-violet">NPTEL — ML Certified</span>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn btn-gradient" data-scroll="projects">View my work</button>
+          <a href="#" id="resume-link-hero" download="Anusha_Antony_Resume.pdf" class="btn btn-outline"><i data-lucide="download"></i> Download resume</a>
+        </div>
+
+        <div class="contact-row">
+          <span><i data-lucide="map-pin"></i> Kerala, India</span>
+          <a href="mailto:anushaantony204@gmail.com"><i data-lucide="mail"></i> anushaantony204@gmail.com</a>
+          <a href="tel:+917306338390"><i data-lucide="phone"></i> +91 7306338390</a>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="window-chrome">
+          <span class="dot dot-amber"></span><span class="dot dot-teal"></span><span class="dot dot-violet"></span>
+          <span class="chrome-label">profile.jsx</span>
+        </div>
+        <div class="profile-body">
+          <div class="code-line">
+            <span class="kw">import</span> Anusha <span class="kw">from</span> <span class="str">"./kerala"</span>;
+          </div>
+
+          <div class="avatar-frame">
+  <img src="./linkedin_dp.jpeg" alt="Anusha Antony" class="profile-img">
+</div>
+
+          <div class="facts">
+            <div class="fact-row"><span>Graduating</span><span>2027</span></div>
+            <div class="fact-row"><span>CGPA</span><span>8.19 / 10</span></div>
+            <div class="fact-row"><span>Looking for</span><span>Entry-level SWE roles</span></div>
+            <div class="fact-row"><span>Based in</span><span>Kerala, India (open to relocate/remote)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- SKILLS ---------------- -->
+    <section id="skills" class="section container">
+      <p class="eyebrow tone-amber">What I work with</p>
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card tone-blue">
+          <div class="skill-file"><span class="file-dot"></span>languages.py</div>
+          <div class="skill-body">
+            <div class="skill-head"><span class="icon-badge tone-blue"><i data-lucide="code-2"></i></span><p>Languages</p></div>
+            <div class="chip-row">
+              <span class="tag tone-blue">Python</span>
+              <span class="tag tone-blue">Java</span>
+              <span class="tag tone-blue">JavaScript</span>
+              <span class="tag tone-blue">C</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card tone-teal">
+          <div class="skill-file"><span class="file-dot"></span>full-stack.js</div>
+          <div class="skill-body">
+            <div class="skill-head"><span class="icon-badge tone-teal"><i data-lucide="layers"></i></span><p>Full-Stack Development</p></div>
+            <div class="chip-row">
+              <span class="tag tone-teal">MERN (MongoDB, Express, React, Node)</span>
+              <span class="tag tone-teal">Django</span>
+              <span class="tag tone-teal">HTML, JavaScript, CSS, PHP</span>
+              <span class="tag tone-teal">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card tone-violet">
+          <div class="skill-file"><span class="file-dot"></span>databases.sql</div>
+          <div class="skill-body">
+            <div class="skill-head"><span class="icon-badge tone-violet"><i data-lucide="database"></i></span><p>Databases</p></div>
+            <div class="chip-row">
+              <span class="tag tone-violet">MySQL</span>
+              <span class="tag tone-violet">MongoDB</span>
+              <span class="tag tone-violet">PL/SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card tone-amber">
+          <div class="skill-file"><span class="file-dot"></span>web.html</div>
+          <div class="skill-body">
+            <div class="skill-head"><span class="icon-badge tone-amber"><i data-lucide="globe"></i></span><p>Web Technologies</p></div>
+            <div class="chip-row">
+              <span class="tag tone-amber">HTML5</span>
+              <span class="tag tone-amber">CSS3</span>
+              <span class="tag tone-amber">Bootstrap</span>
+              <span class="tag tone-amber">AJAX</span>
+              <span class="tag tone-amber">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card tone-rose">
+          <div class="skill-file"><span class="file-dot"></span>data-science.ipynb</div>
+          <div class="skill-body">
+            <div class="skill-head"><span class="icon-badge tone-rose"><i data-lucide="bar-chart-3"></i></span><p>Data Science</p></div>
+            <div class="chip-row">
+              <span class="tag tone-rose">Pandas</span>
+              <span class="tag tone-rose">NumPy</span>
+              <span class="tag tone-rose">Matplotlib</span>
+              <span class="tag tone-rose">scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card tone-blue">
+          <div class="skill-file"><span class="file-dot"></span>tooling.json</div>
+          <div class="skill-body">
+            <div class="skill-head"><span class="icon-badge tone-blue"><i data-lucide="wrench"></i></span><p>Tools & Platforms</p></div>
+            <div class="chip-row">
+              <span class="tag tone-blue">Git</span>
+              <span class="tag tone-blue">GitHub</span>
+              <span class="tag tone-blue">VS Code</span>
+              <span class="tag tone-blue">IBM Bob</span>
+              <span class="tag tone-blue">Claude.ai</span>
+              <span class="tag tone-blue">Antigravity</span>
+              <span class="tag tone-blue">Google colab</span>
+              <span class="tag tone-blue">Jupyter notebook</span>
+              <span class="tag tone-blue">Gemini API</span>
+              <span class="tag tone-blue">Twilio API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chip-row soft-skills">
+        <span class="tag tone-amber">Problem Solving</span>
+        <span class="tag tone-amber">Teamwork & Collaboration</span>
+        <span class="tag tone-amber">Communication</span>
+        <span class="tag tone-amber">Time Management</span>
+      </div>
+    </section>
+
+    <!-- ---------------- PROJECTS ---------------- -->
+    <section id="projects" class="section container">
+      <p class="eyebrow tone-violet">Selected work</p>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-list">
+        <div class="project-card">
+          <div class="project-file-row">
+            <span><i data-lucide="folder-git-2"></i> inexa/</span>
+            <span class="muted">2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <div>
+                <h3>InExa</h3>
+                <p class="muted">AI-Enhanced Exam Cell Management System</p>
+              </div>
+              <a href="https://github.com/Anusha-Antony/ExamCell" target="_blank" rel="noreferrer" class="link-teal">View on GitHub <i data-lucide="external-link"></i></a>
+            </div>
+            <ul class="dash-list">
+              <li>Automated faculty allocation and invigilation scheduling for 50+ faculty records, replacing a fully manual process and cutting coordination effort by roughly 60%.</li>
+              <li>Built role-based access control with full CRUD operations and AI-based scheduling logic across separate admin, faculty, and student views.</li>
+            </ul>
+            <p class="project-note">★ Presented as a research paper at ICACA 2026, FISAT.</p>
+            <div class="chip-row">
+              <span class="tag tone-violet">MongoDB</span>
+              <span class="tag tone-violet">Express.js</span>
+              <span class="tag tone-violet">React.js</span>
+              <span class="tag tone-violet">Node.js</span>
+              <span class="tag tone-violet">MySQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+  <div class="project-file-row">
+    <span><i data-lucide="folder-git-2"></i> study_analyser/</span>
+    <span class="muted">2026</span>
+  </div>
+
+  <div class="project-body">
+    <div class="project-head">
+      <div>
+        <h3>STUDY_ANALYSER</h3>
+        <p class="muted">AI-powered study management platform with Google Gemini integration</p>
+      </div>
+
+      <a href="https://github.com/Anusha-Antony/Study_Mind"
+         target="_blank"
+         rel="noreferrer"
+         class="link-teal">
+        View on GitHub <i data-lucide="external-link"></i>
+      </a>
+    </div>
+
+    <ul class="dash-list">
+      <li>Developed a full-stack study management web application using Django with secure user authentication and personalized dashboards.</li>
+
+      <li>Integrated Google Gemini AI to provide an intelligent study assistant for real-time explanations, productivity guidance, and academic support.</li>
+
+      <li>Implemented study session tracking, assignment management, subject organization, and deadline monitoring with responsive user interfaces.</li>
+
+      <li>Designed scalable Django models with database constraints, migrations, and optimized queries for reliable data management.</li>
+    </ul>
+
+    <div class="chip-row">
+      <span class="tag tone-violet">Python</span>
+      <span class="tag tone-violet">Django</span>
+      <span class="tag tone-violet">Google Gemini AI</span>
+      <span class="tag tone-violet">HTML</span>
+      <span class="tag tone-violet">CSS</span>
+      <span class="tag tone-violet">JavaScript</span>
+      <span class="tag tone-violet">SQLite</span>
+    </div>
+  </div>
+</div>
+
+        <div class="project-card">
+          <div class="project-file-row">
+            <span><i data-lucide="folder-git-2"></i> doctor-appointment-system/</span>
+            <span class="muted">2024</span>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <div>
+                <h3>Doctor Appointment System</h3>
+                <p class="muted">Multi-doctor scheduling with live SMS updates</p>
+              </div>
+              <a href="https://github.com/Anusha-Antony/" target="_blank" rel="noreferrer" class="link-teal">View on GitHub <i data-lucide="external-link"></i></a>
+            </div>
+            <ul class="dash-list">
+              <li>Built multi-doctor scheduling with real-time slot booking and an AJAX-driven UI that eliminates full page reloads.</li>
+              <li>Integrated the Twilio SMS API to send automated appointment confirmations to patients.</li>
+            </ul>
+            <div class="chip-row">
+              <span class="tag tone-violet">PHP</span>
+              <span class="tag tone-violet">MySQL</span>
+              <span class="tag tone-violet">HTML</span>
+              <span class="tag tone-violet">CSS</span>
+              <span class="tag tone-violet">JavaScript</span>
+              <span class="tag tone-violet">AJAX</span>
+              <span class="tag tone-violet">Twilio API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- EXPERIENCE ---------------- -->
+    <section id="experience" class="section container">
+      <p class="eyebrow tone-teal">Hands-on time</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline-row">
+  <div class="timeline-period">dec 2025 – march 2026</div>
+  <div class="timeline-content">
+    <span class="timeline-dot"></span>
+    <div class="timeline-head">
+      <i data-lucide="award"></i>
+      <h3>Student Development Program – Full Stack Web Development with AI Tools</h3>
+    </div>
+    <p class="muted">Vidya Academy of Science and Technology</p>
+    <ul class="dash-list">
+      <li>Successfully completed the Student Development Program under the Next Gen Employability Program.</li>
+      <li>Gained hands-on experience in HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and AI-assisted web development tools.</li>
+      <li>Built responsive web applications and strengthened full-stack development skills through practical projects.</li>
+    </ul>
+  </div>
+</div>
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="timeline-period">May 2023 – Jun 2023</div>
+          <div class="timeline-content">
+            <span class="timeline-dot"></span>
+            <div class="timeline-head"><i data-lucide="briefcase"></i><h3>Python & Data Science Intern</h3></div>
+            <p class="muted">IPCS Global</p>
+            <ul class="dash-list">
+              <li>Built data manipulation and visualization pipelines with NumPy and Matplotlib on real-world datasets, producing analytical reports for review.</li>
+              <li>Built and evaluated supervised ML models with scikit-learn, applying train-test splitting, feature selection, and accuracy benchmarking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- ACHIEVEMENTS ---------------- -->
+    <section id="achievements" class="section container">
+      <p class="eyebrow tone-rose">Beyond the classroom</p>
+      <h2 class="section-title">Achievements & Leadership</h2>
+
+      <div class="achievements-grid">
+        <div class="achievement-card tone-blue">
+          <span class="icon-badge tone-blue"><i data-lucide="book-open"></i></span>
+          <h3>Published Research Paper</h3>
+          <p class="muted">Presented "InExa: AI-Enhanced Exam Cell Management System" at ICACA 2026, FISAT.</p>
+        </div>
+        <div class="achievement-card tone-amber">
+          <span class="icon-badge tone-amber"><i data-lucide="trophy"></i></span>
+          <h3>STRIDE Makethon 2025 — Finalist</h3>
+          <p class="muted">Selected among top teams for an assistive-health innovation; presented a working prototype under competition conditions.</p>
+        </div>
+        <div class="achievement-card tone-violet">
+          <span class="icon-badge tone-violet"><i data-lucide="users"></i></span>
+          <h3>Secretary, CESA</h3>
+          <p class="muted">Organized 5+ technical workshops and led a state-level TechFest, coordinating 100+ student participants.</p>
+        </div>
+        <div class="achievement-card tone-teal">
+          <span class="icon-badge tone-teal"><i data-lucide="code-2"></i></span>
+          <h3>Smart India Hackathon Participant</h3>
+          <p class="muted">Contributed to real-world problem scoping, solution architecture, and team-based product development.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- EDUCATION + CERTS ---------------- -->
+    <section id="education" class="section container">
+      <div class="edu-grid">
+        <div>
+          <p class="eyebrow tone-teal">Academics</p>
+          <h2 class="section-title">Education</h2>
+          <div class="edu-list">
+            <div class="edu-item">
+              <i data-lucide="graduation-cap"></i>
+              <div>
+                <h3>B.Tech in Computer Science & Engineering</h3>
+                <p class="muted">APJ Abdul Kalam Technological University (KTU) — Lateral Entry via Diploma</p>
+                <p class="mono muted">2024 – Expected 2027 · CGPA: 8.22</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <i data-lucide="graduation-cap"></i>
+              <div>
+                <h3>Diploma in Computer Engineering</h3>
+                <p class="muted">State Board of Technical Education (SBTE)</p>
+                <p class="mono muted">2022 – 2024 · CGPA: 8.76</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow tone-amber">Keeping current</p>
+          <h2 class="section-title">Certifications</h2>
+          <ul class="cert-list">
+            <li><i data-lucide="award"></i> Introduction to Machine Learning — NPTEL (Jul–Oct 2025)</li>
+            <li><i data-lucide="award"></i> Introduction to JavaScript — Pupilfirst</li>
+            <li><i data-lucide="award"></i> Python 3.4.3, PHP and MySQL — Spoken Tutorial, IIT Bombay</li>
+            <li><i data-lucide="award"></i> Full Stack Web Development with AI Tools — Vidya Academy of Science and Technology</li>
+
+<li><i data-lucide="award"></i> Getting Started with Artificial Intelligence — IBM SkillsBuild</li>
+
+<li><i data-lucide="award"></i> Getting Started with Cybersecurity — IBM SkillsBuild</li>
+
+<li><i data-lucide="award"></i> Introduction to Cybersecurity — Cisco Networking Academy</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- CONTACT ---------------- -->
+    <section id="contact" class="section container">
+      <div class="contact-card">
+        <p class="eyebrow tone-violet">Let's build something</p>
+        <h2 class="contact-title">Open to entry-level SWE roles</h2>
+        <p class="contact-copy">I'm looking for a team where I can keep shipping full-stack and AI-integrated products. Reach out — I reply fast.</p>
+        <div class="contact-actions">
+          <a href="mailto:anushaantony204@gmail.com" class="btn btn-teal"><i data-lucide="mail"></i> Email me</a>
+          <a href="https://www.linkedin.com/in/anusha-antony244" target="_blank" rel="noreferrer" class="btn btn-outline"><i data-lucide="linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/Anusha-Antony/" target="_blank" rel="noreferrer" class="btn btn-outline"><i data-lucide="github"></i> GitHub</a>
+          <a href="#" id="resume-link-contact" download="Anusha_Antony_Resume.pdf" class="btn btn-teal-outline"><i data-lucide="download"></i> Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span class="mono">© <span id="year"></span> Anusha Antony</span>
+      <span><i data-lucide="map-pin"></i> Kerala, India</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="resume-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
