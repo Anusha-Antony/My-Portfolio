@@ -88,11 +88,10 @@ Portfolio/
 ├── index.html
 ├── styles.css
 ├── script.js
-├── resume-data.js
 ├── assets/
 │   ├── images/
 │   ├── icons/
-│   └── resume.pdf
+│   └── Anusha_Antony_Resume.pdf
 │
 ├── README.md
 └── LICENSE
