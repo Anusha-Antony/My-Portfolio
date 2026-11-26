@@ -2,14 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Render lucide icons
   if (window.lucide) lucide.createIcons();
 
-  // Wire up resume download links from the embedded base64 PDF
-  const resumeUrl = `data:application/pdf;base64,${RESUME_BASE64}`;
-  document
-    .querySelectorAll(
-      "#resume-link-desktop, #resume-link-mobile, #resume-link-hero, #resume-link-contact"
-    )
-    .forEach((el) => el.setAttribute("href", resumeUrl));
-
   // Footer year
   document.getElementById("year").textContent = new Date().getFullYear();
 
